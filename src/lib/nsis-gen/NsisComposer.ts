@@ -9,6 +9,7 @@ export interface INsisComposerOptions {
 
     // Basic.
     appName: string;
+    name: string;
     companyName: string;
     description: string;
     version: string;
@@ -121,6 +122,7 @@ ${ await this.makeUninstallSection() }`;
 ${ NsisComposer.DIVIDER }
 
 !define _APPNAME "${ this.options.appName }"
+!define _NAME "${ this.options.name }"
 !define _COMPANYNAME "${ this.options.companyName }"
 !define _DESCRIPTION "${ this.options.description }"
 !define _VERSION "${ this.fixedVersion }"
@@ -293,6 +295,8 @@ RMDir /r "$INSTDIR"
 Delete "$SMPROGRAMS\\$StartMenuFolder\\\${_APPNAME}.lnk"
 Delete "$SMPROGRAMS\\$StartMenuFolder\\Uninstall.lnk"
 RMDir "$SMPROGRAMS\\$StartMenuFolder"
+
+RMDir  /r "$PROFILE\\AppData\\Local\\\${_NAME}"
 
 Delete "$DESKTOP\\\${_APPNAME}.lnk"
 

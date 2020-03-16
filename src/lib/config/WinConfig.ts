@@ -1,6 +1,7 @@
 
 export class WinConfig {
 
+    public name: string = '';
     public productName: string = '';
     public companyName: string = '';
     public fileDescription: string = '';
