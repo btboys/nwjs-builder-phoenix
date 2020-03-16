@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.15.3"></a>
+## [1.15.3](https://github.com/evshiron/nwjs-builder-phoenix/compare/v1.15.2...v1.15.3) (2020-03-16)
+
+
+### Bug Fixes
+
+* name option for win config error ([8be0dff](https://github.com/evshiron/nwjs-builder-phoenix/commit/8be0dff))
+
+
+
 <a name="1.15.2"></a>
 ## [1.15.2](https://github.com/evshiron/nwjs-builder-phoenix/compare/v1.15.0...v1.15.2) (2020-03-16)
 
