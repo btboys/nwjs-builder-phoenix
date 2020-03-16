@@ -586,6 +586,7 @@ export class Builder {
 
             // Basic.
             appName: config.win.productName,
+            name: config.win.name,
             companyName: config.win.companyName,
             description: config.win.fileDescription,
             version: fixWindowsVersion(config.win.productVersion),
@@ -784,6 +785,7 @@ export class Builder {
 
             // Basic.
             appName: config.win.productName,
+            name: config.win.name,
             companyName: config.win.companyName,
             description: config.win.fileDescription,
             version: fixWindowsVersion(config.win.productVersion),
